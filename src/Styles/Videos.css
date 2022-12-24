@@ -45,6 +45,8 @@ body{
 }
 #container{
     position: relative;
+    align-self: center;
+    
 }
 #hide{
     display: none;

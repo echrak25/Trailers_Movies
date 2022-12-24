@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
+    "movie-trailer": "^3.0.0",
+    "nodeman": "^1.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-player": "^2.11.0",
     "react-router-dom": "^6.5.0",
     "react-scripts": "5.0.1"
   },
