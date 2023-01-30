@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "axios": "^1.2.1",
+    "movie-trailer": "^3.0.0",
+    "react-icons": "^4.7.1",
+    "react-router": "^6.5.0",
+    "react-router-dom": "^6.5.0"
+  }
+}
