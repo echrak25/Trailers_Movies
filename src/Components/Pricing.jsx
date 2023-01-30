@@ -6,40 +6,6 @@ import no_image from './no-image-available-icon-flat-vector-no-image-available-i
 import '../Styles/Videos.css'
 import { Container } from './NavBar'
 function Pricing() {
-  const[movieTitle,setMovieTitle]=useState("")
-  const [trailer,setTrailer]=useState(true)
-  const {toggle,inputValue}=useContext(Container)
-   const input=inputValue
-  const [moviesData, setMoviesData] = useState([])
-  const Shown =input ? 'search':'discover'
-  const Images = "https://image.tmdb.org/t/p/w500"
-  const Api = `https://api.themoviedb.org/3/${Shown}/movie`
-  const MovieCall = async () => {
-    const data = await axios.get(Api, {
-      params: {
-        api_key: '97e50f91f39a8298c4d9603b9462060d',
-        query:input
-      }
-    })
-    const results = data.data.results
-    setMoviesData(results)
-  }
-  useEffect(() => {
-    setTimeout(()=>{
-      MovieCall()
-    },100)
-    
-  },[input])
-  const moviesTitle=(movie)=>{
-    setMovieTitle(movie.name)
-    setTrailer(!trailer)}
-  return (
-   
-    <Fragment>
-   
-      <div className={toggle? "mainBgColor" : "secondaryBgColor"}>
-        <div className='movies-container'>
-      {moviesData.map((movie) => {
         return (
           <Fragment>
             
